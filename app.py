@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify
 import os
 import requests
-import re
-import hashlib
 from pathlib import Path
 from Wednesday import count_wednesdays
 from Contacts import sort_contacts
@@ -11,9 +9,6 @@ from Sender_Email import extract_sender_email
 from Credit_Card import extract_credit_card
 from Similar_Comments import find_most_similar_comments
 from Gold_Ticket import calculate_gold_ticket_sales
-from API import fetch_and_save_api_data
-from GIT_Repo import clone_and_commit_git_repo
-from User_SQL import run_sql_query
 
 os.environ['AIPROXY_TOKEN'] = 'eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjMwMDIzMTZAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.DvLFDgvuV6vp37Tp89HhU-8vYu2FZCTXovK7U6oyjT8'
 
